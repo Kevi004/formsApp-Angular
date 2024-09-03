@@ -3,7 +3,7 @@ import { AbstractControl, AsyncValidator, ValidationErrors } from '@angular/form
 import { Observable, of } from 'rxjs';
 
 @Injectable({providedIn: 'root'})
-export class EmailValidator implements AsyncValidator {
+export class EmailValidators implements AsyncValidator {
 
   constructor() { }
   validate(control: AbstractControl): Observable<ValidationErrors | null> {
